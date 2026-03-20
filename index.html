@@ -6,6 +6,50 @@
     <title>Culturama</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+    <section>
+        
+        
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <!-- Dados pessoais -->
+                <label for="userNome">Nome:</label>
+                <input type="text" name="userName" id="userNome" required>
+                <br>
+                <label for="userAge">Idade:</label>
+                <input type="Number" name="userAge" min="12" max="100" required>
+                <br>
+                <label for="birthDate">Data de nascimento:</label>
+                <input type="Date" name="birthDate">
+                <br>
+                <label for="userEmail">E-mail:</label>
+                <input type="email" name="userEmail" required>
+                <br>
+                <label for="userPhone">Telefone:</label>
+                <input type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="DDD + number">
+                <br>
+                <label for="userImage">Upload de Fotos:</label>
+                <input type="file" accept="image/*" name="userImage">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p> Gênero:</p>
+                <input type="radio" name="userGender" value="Feminino">
+                <label for="userGender">Feminino</label>
+
+                <input type="radio" name="userGender" value="Masculino">
+                <label for="userGender">Masculino</label>
+
+                <input type="radio" name="userGender" value="Prefiro não dizer">
+                <label for="userGender">Prefiro não dizer</label>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
